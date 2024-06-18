@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Development Ideas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0074b7;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .logo {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    margin-right: 100%; /* Push the logo to the right by taking up all available space */
+    margin-top: -60px;
+}
+        .search-bar {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 50%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .idea {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .idea h2 {
+            font-size: 24px;
+            color: #0074b7;
+        }
+
+        .idea p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Full Stack Development Ideas</h1>
+        <a href="https://www.youtube.com/@askme11" target="_blank"></a>
+        <img src="image/mai.logo.png" alt="Logo" class="logo">
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="ideaSearch" placeholder="Search for ideas...">
+    </div>
+
+    <div class="idea">
+        <h2>Idea 1: Build a Social Media Platform</h2>
+        <p>Create a full-stack application that allows users to create profiles, post updates, and connect with others.</p>
+    </div>
+
+    <div class="idea">
+        <h2>Idea 2: E-Commerce Website</h2>
+        <p>Develop an e-commerce platform with features like product listings, shopping cart, payment processing, and user accounts.</p>
+    </div>
+
+    <div class="idea">
+        <h2>Idea 3: Online Learning Platform</h2>
+        <p>Build a platform for online courses, where users can sign up, access course materials, and interact with instructors and fellow students.</p>
+    </div>
+
+    <div class="idea">
+        <h2>Idea 4: Real-time Chat Application</h2>
+        <p>Create a real-time chat application that allows users to join chat rooms, send messages, and interact with others in real-time.</p>
+    </div>
+
+    <div class="idea">
+        <h2>Idea 5: Portfolio Website</h2>
+        <p>Design and build a personal portfolio website to showcase your skills and projects as a full-stack developer.</p>
+<BR></div>
+        <div class="idea">
+            <h2>Idea 6: Build a Solar System</h2>
+            <p>Create a website that allows users to check how to move solar system.</p>
+        </div>
+    
+        <div class="idea">
+            <h2>Idea 7: Birthday Gift</h2>
+            <p>create a website for wish the best way to happy birthday.</p>
+        </div>
+    
+        <div class="idea">
+            <h2>Idea 8: Smoke Animation</h2>
+            <p>Build a platform for online courses, where users can sign up, access course materials, and interact with instructors and fellow students.</p>
+        </div>
+    
+        <div class="idea">
+            <h2>Idea 9: Certificate Generator</h2>
+            <p>Create a real-time chat application that allows users to join chat rooms, send messages, and interact with others in real-time.</p>
+        </div>
+    
+        <div class="idea">
+            <h2>Idea 10: Design a Share Buttom</h2>
+            <p>Design and build a personal portfolio website to showcase your skills and projects as a full-stack developer.</p>
+    </div>
+    <div class="idea">
+        <h2>Idea 11: Design a Space area</h2>
+        <p>Design and build a personal portfolio website to showcase your skills and projects as a full-stack developer.</p>
+</div>
+
+
+<div class="idea">
+    <h2>Idea 12: Navigation bar frontant</h2>
+    <p>Design and build a personal portfolio website to showcase your skills and projects as a full-stack developer.</p>
+</div>
+
+<div class="idea">
+    <h2>Idea 13: </h2>
+    <p>Design and build a personal portfolio website to showcase your skills and projects as a full-stack developer.</p>
+</div>
+
+<div class="idea">
+    <h2>Idea 14: </h2>
+    <p>Lounch date counter page</p>
+</div>
+<div class="idea">
+    <h2>Idea 15: </h2>
+    <p>quote generator</p>
+</div>
+<div class="idea">
+    <h2>Idea 16: </h2>
+    <p>build a thumbnail generator</p>
+</div>
+<div class="idea">
+    <h2>Idea 17: </h2>
+    <p>build a downloading progress bar</p>
+</div>
+<div class="idea">
+    <h2>Idea 18: </h2>
+    <p>simple train ticket resistration system.</p>
+</div>
+<div class="idea">
+    <h2>Idea 19: </h2>
+    <p>infinite scrolling</p>
+</div>
+<div class="idea">
+    <h2>Idea 20: </h2>
+    <p>weather app</p>
+</div>
+<div class="idea">
+    <h2>Idea 13: </h2>
+    <p>a recipe search website.</p>
+</div>
+
+    <script>
+        const searchInput = document.getElementById('ideaSearch');
+        const ideas = document.querySelectorAll('.idea');
+
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            ideas.forEach(idea => {
+                const ideaText = idea.textContent.toLowerCase();
+                if (ideaText.includes(searchTerm)) {
+                    idea.style.display = 'block';
+                } else {
+                    idea.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

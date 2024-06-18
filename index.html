@@ -1,0 +1,911 @@
+<html>
+  <head>
+    <meta name="description" content="Hello this is my first web page!." />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css">
+          <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"  crossorigin="anonymous"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+                  <title>Ask ME India </title>
+    <!--bootstrap add-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" rel="stylesheet">
+  <!--css start-->
+   <style>
+    * {
+        margin: 0;
+         padding: 0;
+           box-sizing: border-box;
+            }
+  
+  body {
+         background-color: black;
+          color: white;
+            font-family: "Poppins", sans-serif;
+             }
+  
+.navbar {
+           position: absolute;
+             top: 0;
+              width: 100%;
+                display: flex;
+                   justify-content: space-between;
+                     padding: 3% 5%;
+                       z-index: 10;
+                         }
+  
+  .navbar__brand {
+                    width: 100px;
+                      height: 100%;
+                       }
+  
+  .brand__logo {
+                  width: 240%;
+                    height: 100%;
+                      }
+
+                      /*language hindi english */
+  
+  .language__drop__down {
+                          background: transparent;
+                            border: none;
+                              color: white;
+                               }
+  
+  .language__drop__down:focus {
+                                outline: none;
+                                  }
+  
+  .dropdown__container {
+                           border: 1px solid white;
+                             padding: 0.4rem;
+                                 border-radius: 4px;
+                                    background: rgba(0, 0, 0, 0.4);
+                                      }
+  
+  .signin__button {
+                    width: 100%;
+                      height: 100%;
+                         background-color: #dc030f;
+                            border: 1px solid #dc030f;
+                              color: white;
+                                 padding: 0.25rem 0.5rem;
+                                   border-radius: 4px;
+                                     }
+  
+  .navbar__nav__items {
+                        display: flex;
+                           gap: 10px;
+                             }
+                             /*background image first IAMGE css code*/
+  
+  .hero__bg__image__container {
+                                width: 110%;
+                                     height: 80vh;
+                                        }
+  
+  .hero__bg__image {
+                      width: 100%;
+                          height: 100%;
+                               object-fit: cover;
+                                  }
+  
+  .hero__bg__overlay {
+                        position: absolute;
+                          inset: 0;
+                             width: 100%;
+                               height: 80vh;
+                                background: rgba(0, 0, 0, 0.4);
+                                   background-image: linear-gradient(
+                                     to top,
+                                       rgba(0, 0, 0, 0.8) 0,
+                                           rgba(0, 0, 0, 0) 60%,
+                                               rgba(0, 0, 0, 0.8) 100%);
+                                                        }
+  
+  .hero__card {
+                position: absolute;
+                     top: 30%;
+                       text-align: center;
+                         display: flex;
+                           flex-direction: column;
+                             gap: 10px;
+                               }
+  
+  .hero__title {
+                font-weight: 600;
+                  font-size: 2rem;
+                    }
+  
+  .hero__subtitle,
+                 .hero__description {
+                       font-weight: 400;
+                          font-size: 1rem;
+                            }
+  
+  .hero__description {
+                      margin: 10 100px;
+                           }
+  
+  .email__input {
+               border: none;
+                   background: transparent;
+                    width: 100%;
+                     height: 100%;
+                       padding-left: 7px;
+                        }
+  .email__label {
+                 color: black;
+                   position: absolute;
+                    top: 28%;
+                     left: 2%;
+                      color: rgb(153, 149, 149);
+                        transition: 0.5s;
+                          }
+  
+  .email__form__container {
+                           display: flex;
+                             flex-direction: column;
+                               justify-content: center;
+                                align-items: center;
+                                 gap: 15px;
+                                  }
+  
+  .form__container {
+                    background-color: white;
+                     width: 90%;
+                       height: 50px;
+                         position: relative;
+                          }
+  
+  .email__input:focus + .email__label {
+                                        top: 0.2rem;
+                                          font-size: 10px;
+                                            }
+  
+  .email__input:not(:placeholder-shown).email__input:not(:focus) + .email__label {
+                                                                                   top: 0.2rem;
+                                                                                     font-size: 10px;
+                                                                                       }
+  
+  .email__input:focus-visible {
+                               outline: none;
+                                   }
+  
+  .primary__button {
+    /*extra*/
+                     margin-top: 1px;
+                       align-self: flex-start;
+                          padding: 10px 20px;
+                            background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+                              color: white;
+                                border-radius: 10px;
+                                  border: none;
+                                    cursor: pointer;
+                                      transition: 0.5s ease;
+                                         }
+  
+  .feature {
+             border-top: 8px solid #222;
+               padding: 2rem 1rem;
+                }
+  
+  .feature__details {
+                     text-align: center;
+                           }
+  
+  .feature__title {
+                   font-size: 25px;
+                      font-weight: 600;
+                        margin: 10px 0;
+                          }
+  
+  .feature__sub__title {
+                       font-size: 15px;
+                        font-weight: 400;
+                          }
+ /*this css only for upload college student amage*/
+  
+  .feature__image__container {
+                              width: 100%;
+                                  position: relative;
+                                      }
+  .feature__image {
+                   width: 150%;
+                     width: 150%;
+                        }
+
+  .FAQ__accordian {
+                   width: 100%;
+                     }
+  .FAQ__title {
+               width: 100%;
+                 display: flex;
+                    justify-content: space-between;
+                       padding: 15px 20px;
+                         font-size: 18px;
+                           background-color: #303030;
+                             border: 1px solid #303030;
+                               color: white;
+                                  }
+  
+  .FAQ__visible {
+                 background-color: #303030;
+                   border-top: 1px solid black;
+                      max-height: 0;
+                         overflow: hidden;
+                             transition: max-height 0.5s ease-in-out;
+                               }
+  
+  .FAQ__visible  p {
+                     margin: 1rem;
+                     font-family: 'Times New Roman', Times, serif;
+                              }
+  .FAQ__list__container {
+                         border-top: 8px solid #222;
+                            padding: 2rem 0;
+                              }
+  .FAQ__heading {
+    font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                   text-align: center;
+                    font-weight: 600;
+                       margin: 1rem 3rem;
+                         }
+  
+  .FAQ__list {
+              display: flex;
+               flex-direction: column;
+                 justify-content: center;
+                   align-items: center;
+                    gap: 10px;
+                      }
+  
+  .FAQ__get__started__email {
+                            text-align: center;
+                                  }
+  
+  .FAQ__get__started__email > h3 {
+                                  font-size: 18px;
+                                    font-weight: 400;
+                                       margin: 2rem 0;
+                                          }
+  
+  footer {
+          border-top: 8px solid #333;
+           padding: 2rem 1rem;
+             color: #757575;
+                display: flex;
+                   flex-direction: column;
+                    gap: 20px;
+                     }
+  
+  .footer__row__2 {
+                  display: flex;
+                     flex-wrap: wrap;
+                      justify-content: space-around;
+                        gap: 20px;
+                           }
+  
+  .footer__row__1 > h4 {
+                       font-size: 15px;
+                          font-weight: 500;
+                            }
+  
+  .footer__row__3 > .dropdown__container {
+                                         width: fit-content;
+                                           border: 1px solid #757575;
+                                             color: #757575;
+                                                }
+  
+  .footer__row__3 > .dropdown__container > .language__drop__down {
+                                                                  color: #757575;
+                                                                         }
+  
+  @media (min-width: 768px) {
+    .hero__bg__image__container {
+                                height: 100vh;
+                                     }
+  
+    .hero__bg__overlay {
+                       height: 100vh;
+                          }
+    .hero__card {
+                  top: 40%;
+                     left: 30%;
+                       transform: translate(-20%, -20%);
+                           }
+    .hero__title {
+                font-size: 3rem;
+                     }
+    .hero__subtitle,
+    .hero__description {
+                      font-size: 1.3rem;
+                           }
+  
+    .feature {
+               padding: 4rem;
+                     }
+  
+    .feature__title {
+                     font-size: 35px;
+                          }
+  
+    .feature__sub__title {
+                         font-size: 20px;
+                             }
+    .feature__2__poster__container {
+                                     max-width: 26em;
+                                          height: 85px;
+                                              }
+    .poster__container {
+                       width: 15%;
+                            }
+    .download__gif__container {
+                            width: 3rem;
+                              height: 3rem;
+                                  }
+  
+    .poster__details > h4 {
+                            font-size: 18px;
+                                 }
+    .poster__details > h6 {
+                          font-size: 14px;
+                               }
+    .FAQ__title {
+                  font-size: 20px;
+                     }
+    .FAQ__heading {
+                  font-size: 38px;
+                     font-weight: 500;
+                       letter-spacing: 1px;
+                           }
+    .FAQ__list {
+               padding: 1rem 5rem;
+                  }
+    .FAQ__get__started__email {
+                              width: 75%;
+                                  display: flex;
+                                      flex-direction: column;
+                                         justify-content: center;
+                                             transform: translateX(15%);
+                                                }
+                                                 } 
+  @media (min-width: 1024px) {
+    .navbar {
+             padding: 2% 5%;
+                 }
+  
+ .navbar__brand {
+                width: 150px;
+                     }
+  .signin__button {
+                   padding: 10px 20px;
+                         font-size: 18px;
+                             }
+  .dropdown__container {
+                      padding: 10px 5px;
+                           }
+  
+    .navbar__nav__items {
+                        gap: 30px;
+                            }
+  
+.hero__card {
+             top: 50%;
+               left: 50%;
+                 transform: translate(-50%, -50%);
+                   }
+  
+.form__container {
+                width: 50%;
+                     }
+ .email__form__container {
+                        flex-direction: row;
+                          align-items: center;
+                             gap: 1px;
+                                }
+.primary__button {
+                  height: 50px;
+                        }
+.feature {
+          display: flex;
+               align-items: center;
+                  justify-content: space-between;
+                     gap: 20px;
+                       }
+  
+ .feature__details {
+                    text-align: left;
+                        padding: 0 6rem;
+                           }
+  
+.feature__title {
+                font-size: 50px;
+                     }
+ .feature__sub__title {
+                      font-size: 25px;
+                           }
+  .feature__image__container {
+                               max-width: 500px;
+                                    }
+  .feature:nth-child(even) {
+                         flex-direction: row-reverse;
+                                }
+  
+    .feature__2__poster__container {
+                                   max-width: 20em;
+                                         height: 100px;
+                                            padding: 1rem;
+                                                 }
+    .poster__container {
+                        width: 20%;
+                               }
+    .FAQ__list {
+                padding: 1rem 25rem;
+                       }
+    .FAQ__get__started__email {
+                                  transform: translateX(16%);
+                                      }
+    footer {
+             padding: 2rem 20rem;
+                 justify-content: flex-start;
+                       text-align: left;
+                          align-items: flex-start;
+                             }
+  
+  .footer__row__2 {
+                   justify-content: space-between;
+                        align-items: flex-start;
+                            flex-wrap: nowrap;
+                              }
+  
+    .footer__row__1,
+        .footer__row__3,
+             .footer__row__4 {
+                           align-self: flex-start;
+                               }
+                                 }
+  
+  @media (min-width: 1254px) {
+  }
+
+/*most of student and parent love us*/
+                                                                                          
+.border-1{padding: 5%;
+                      font-size: 30px;
+                             color: white;text-align: center;
+                                 }
+.border-2{
+           display: flex;
+                  justify-content: center;
+                      flex-wrap: wrap;text-align: center;
+                           }
+
+.div{
+    height: auto;
+     padding: 10px;margin: 40px;
+               }
+/*required code*/
+.div-3{
+    padding: 3%;
+       width: 25%;
+                border-radius: 4px;
+                
+                    }
+          /*css rating background hover code*/
+.div:hover{
+           background-color: black;box-shadow: 0 40px 70px 0 rgba(42, 43, 44, 0.6);
+                           border-color: red;
+                                }
+h5{color: rgb(78, 11, 87);
+                     font-size: 20px;
+    
+                           }
+.front1{
+        top: 2%;
+
+             }
+.front2{
+    width: 20px;
+      }
+.front6{
+       border-radius: 50px;
+         }
+.front3{
+         font-size: 20px;
+           }
+span{ 
+    padding: 10px;
+      border-radius: 100px;
+         }
+         /*parents image editing here*/
+img{
+    max-width: 90%; height: auto;
+        }
+.mi{
+    max-width: 449%;
+      }
+@media (max-width:492px){
+          .box-2{
+            display: none;
+              }
+
+                }
+
+/*about founder css code*/
+.custom-email-form-container {
+                              display: flex;
+                                flex-direction: column;
+                                    align-items: center;
+                                        margin: 20px;
+                                           }
+
+.custom-form-container {
+                        position: relative;
+                          margin-bottom: 15px;
+                               }
+
+.custom-email-input {
+                    width: 100%;
+                      padding: 10px;
+                        font-size: 16px;
+                             border: 1px solid #ccc;
+                               border-radius: 4px;
+                                  }
+
+.custom-email-label {
+                    position: absolute;
+                      top: -10px;
+                        left: 10px;
+                           background-color: #fff;
+                             padding: 0 5px;
+                               color: #777;
+                                   font-size: 14px;
+                                       }
+
+.custom-primary-button {
+                           padding: 10px 20px;
+                             font-size: 16px;
+                               color: #fff;
+                                    background-color: #007bff;
+                                      border: none;
+                                         border-radius: 4px;
+                                           cursor: pointer;
+                                               }
+
+.custom-primary-button:hover {
+                              background-color: #0056b3;
+                                                        }
+           /*this css if only for upload file name */
+.aman{
+      text-align: center;
+        color: #FFA500;
+           font-family: 'Times New Roman', Times, serif;
+                  }
+       
+.aman1 {
+       text-align: center;
+         display: flex;
+           flex-direction: column;
+            align-items: center;
+              margin-left: 20%;
+                margin-bottom: -13%;
+                  padding: 20px;
+                     border-radius: 10px;
+                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            text-align: center;
+                              }
+
+ .aman1 input[type="file"] {
+                           margin-bottom: 50px;
+                             }
+
+ .aman1 input[type="submit"] {
+                             cursor: pointer;
+                                  background-color: #0056b3;
+                                  width: 200px;
+                                  margin-right: 15%;
+                                     color: #ffffff;
+                                          border: none;
+                                            padding: 1px 2px;
+                                              border-radius: 20px;
+                                                 transition: background-color 0.3s ease;
+                                                     }
+
+ .aman1 input[type="submit"]:hover {
+                                      background-color: wheat;
+                                       }                               
+                                         </style>
+
+   <!--starting html code from here-->
+  </head>
+  <!--ask me logo code-->
+  <body>
+       <header>
+         <nav class="navbar">
+           <div class="navbar__brand">
+              <img src="image/WELCOME LOGO.png" alt="logo" class="brand__logo"/>
+                </div>
+
+<!--language hindi english code-->
+ <div class="navbar__nav__items">
+          <div class="nav__item">
+            <div class="dropdown__container">
+              <i class="fas fa-globe"></i>
+                 <select name="languages" id="languagesSelect" class="language__drop__down">
+                   <option value="english" selected>English</option>
+                     <option value="hindi">हिन्दी</option>
+                       </select>
+                          </div>
+                             </div>
+                               </div>
+                                   </nav>
+                                     </header>
+<!--backgraound image code on front-->
+    <main>
+       <section class="hero">
+          <div class="hero__bg__image__container">
+             <img
+                src="image/BACK.png"
+                   alt="BG hero image"
+                      class="hero__bg__image"/>
+                        </div>
+                           <div class="hero__bg__overlay"></div>
+                               <div class="hero__card">
+                                  <h1 class="hero__title"><b>Want To Learn Coding ? </b><br/>
+                                    </h1>
+                                        <p class="hero__subtitle"><b>Welcome Folks.</b></p>
+                                            <p class="hero__description">Connect--Learn--Teach--Grow</p>
+          
+          <!--email verification code-->
+
+          <div class="email__form__container">
+            <div class="form__container">
+              <input type="email" class="email__input" id="emailInput" placeholder="Email Address" />
+                <label class="email__label" for="emailInput">Email Address</label>
+                  </div>
+                    <button class="primary__button" onclick="handleEmailSubmission()">Submit</button>
+                       </div>
+                         </div>
+                           </section>
+                             </main>
+          
+
+    <!--student and parents love us-->
+    
+ <div class="border border-2">
+   <div class="div div-1">
+     <strong>
+      <!--write something-->
+        </strong>  
+           <div class="flex"><img src="image/downlaod.png"></div>
+              <div class="flex"><h4><b>1</b></h4></div>
+                 <div class="flex"><p>Downloads</p></div>
+                   </div>
+                     <br>
+                        <br>
+                            <br>
+ <div class="div div-1">
+  <div class="flex"><img src="image/star.png"></div>
+    <div class="flex"><h4><b>4+ Star</b></h4></div>
+      <div class="flex"><p>Web Rating</p></div>
+         </div>
+           <div class="div div-1">
+             <div class="flex"><img src="image/location.png"></div>
+               <div class="flex"><h4><b>1+ Cities</b></h4></div>
+                  <div class="flex"><p>India</p></div>
+                     </div>
+                        <div class="div div-1">
+                            <div class="flex"><img src="image/time.png"></div>
+                               <div class="flex"><h4><b>1 peaple</b></h4></div>
+                                  <div class="flex"><p>Avg Time Spent<br> Daily</p></div>
+                                    </div>
+                                       </div>
+                                          </div>
+   <!--teacher and student loves -->
+<div class="equal">
+  <div class="border border-2">
+   <div class=" div-3">
+     <div class="flex"><img src="image/Devananda.png"></div>
+       <div class="flex"><h6>ASK ME is the best Learning Platform for my son.</h6></div>
+         <div class="flex"><strong>Mother Of Aman<br><h1 style="font-size:1em; "></h1></strong></div>
+           </div>
+              <div class=" div-3">
+                 <div class="flex"><img src="image/Souradip.png"></div>
+                   <div class="flex"><h6>My son Understand Coding With Ask Me.</h6></div>
+                     <div class="flex"><strong>Father Of Aman<br><h1 style="font-size:1em; "></h1> </strong></div> 
+                       </div>
+                          <div class=" div-3">
+                             <div class="flex"><img src="image/suraj-peela.png"></div>
+                                <div class="flex"><h6>Ask me is Very helpfull Platform For Us.</h6></div>
+                                  <div class="flex"><strong>Aman<br><h1 style="font-size:1em; "></h1></strong></div>
+                                    </div>
+                                      </div>
+                                          </div>
+
+    <!-- send college student our details and using uploading metthod using multer-->
+    <h1 class="aman">Student Upload College Id For Free Access</h1>
+                     <form class="aman1" action="/upload" method="post" enctype="multipart/form-data">
+                          <input type="file" name="file" />
+                                <input type="submit" value="upload">
+                                    </form> 
+
+               <!--side image inside of upload buttom-->
+                                          <div class="feature__image__container">
+                                                 <img src="image/new aman child.png" alt="Feature image" class="feature__image"/>
+                                                     </div>
+                                                          </div>
+                                                            </section>
+                                                               <section class="FAQ__list__container">
+
+         <!--ask question student -->
+
+ <h1 class="FAQ__heading">Frequently Asked Questions</h1>
+   <div class="FAQ__list">
+     <div class="FAQ__accordian">
+       <button class="FAQ__title">
+         What Is Ask Me?<i class="fal fa-plus"></i>
+           </button>
+             <div class="FAQ__visible">
+              <p>
+              Ask me is a online learning plateform in this application 
+                ask me provide a full stack courses for
+                   begineers and multiple project of full stack. 
+                     </p>
+                        <p>
+                            You can visite our platform and
+                               build your career easily with ask me.
+                                  </p>
+                                    </div>
+                                      </div>
+<div class="FAQ__accordian">
+  <button class="FAQ__title">
+    How much does Ask Me  cost?<i class="fal fa-plus"></i>
+     </button>
+       <div class="FAQ__visible">
+        <p>
+          visite the ask me on your smartphone, tablet, or laptop device.
+            this fully free for beginers and students.
+             </p>
+              </div>
+                </div>
+  <div class="FAQ__accordian">
+    <button class="FAQ__title">
+      Where can i visite?<i class="fal fa-plus"></i>
+       </button>
+        <div class="FAQ__visible">
+         <p>
+           Watch anywhere, anytime, on an unlimited number of devices. Sign
+            in with your ask me account to watch instantly on the web at
+              ask me.com from your personal computer or on any
+              internet-connected device that offers the ask me web app, smartphones, tablets.
+               </p>
+                <p>
+                  You can also download your favourite projects from github.
+                   . Use downloads to watch while you're
+                     </p>
+                       </div>
+                          </div>
+<div class="FAQ__accordian">
+  <button class="FAQ__title">
+    How do I cancel?<i class="fal fa-plus"></i>
+     </button>
+      <div class="FAQ__visible">
+       <p>
+         ask me is flexible. There are no annoying contracts and no commitments.
+          You can easily cancel your account online in two clicks. There are no cancellation 
+           fees all are free
+             start or stop your account anytime.
+               </p>
+                 </div>
+                    </div>
+                      </div>
+                      <!--email to fill and visite about founder-->
+  <div class="custom-email-form-container">
+   <div class="custom-form-container">
+    <h2 style="font-family: 'Times New Roman', Times, serif; color: violet;">Fill Email to Contact Founder</h2>
+     <input type="email" class="custom-email-input" id="emailInput" placeholder="Email" />
+       <label class="custom-email-label" for="emailInput"></label>
+          </div>
+            <button class="custom-primary-button" onclick="handleEmailSubmission()">Submit</button>
+              </div>                      
+               </div>
+                 </div>
+                   </section>
+                     </main>
+
+  
+<!--footer section started-->
+  <footer>
+    <div class="footer__row__1">
+      <h4>Questions? Call 9031359720</h4>
+        </div>
+          <div class="footer__row__2">
+            <div class="column__1">
+              <p>project</p>
+                <p>home</p>
+                 <p>Privacy</p>
+                  <p>founder</p>
+                    </div>
+<div class="column__2">
+ <p>Help Centre</p>
+  <p>Jobs</p>
+   <p>Cookie Preferences</p>
+    <p>Legal Notices</p>
+     </div>
+      <div class="column__3">
+       <p>Account</p>
+        <p>Ways to Watch</p>
+          <p>Corporate Information</p>
+           <p>Only on Ask Me</p>
+            </div>
+<div class="column__4">
+ <p>policy</p>
+  <p>Terms of Use</p>
+   <p>Contact Us</p>
+    </div>
+     </div>
+<div class="footer__row__3">
+ <div class="dropdown__container">
+  <i class="fas fa-globe"></i>
+   <select name="languages" id="languagesSelect" class="language__drop__down">
+     <option value="english" selected>English</option>
+      <option value="hindi">हिन्दी</option>
+        </select>
+         </div>
+           </div> 
+<div class="footer__row__4">
+ <p>Ask Me India</p>
+   </div>
+     </footer>
+
+<script src="script.js"></script>
+ </body>
+  </html>
+    </html>
+<!--java script code strting-->
+    <script>
+        let accordian = document.getElementsByClassName("FAQ__title");
+          for (let i = 0; i < accordian.length; i++) {
+            accordian[i].addEventListener("click", function () {
+                if (this.childNodes[1].classList.contains("fa-plus")) {
+                     this.childNodes[1].classList.remove("fa-plus");
+                          this.childNodes[1].classList.add("fa-times");
+                            } else {
+                                   this.childNodes[1].classList.remove("fa-times");
+                                       this.childNodes[1].classList.add("fa-plus");
+                                          }
+                                           let content = this.nextElementSibling;
+                                             if (content.style.maxHeight) {
+                                                 content.style.maxHeight = null;
+                                                   } else {
+                                                       content.style.maxHeight = content.scrollHeight + "px";
+                                                         }
+                                                           });
+                                                              }
+//this is new script of submit buttom//
+function handleEmailSubmission() {
+  const emailInput = document.getElementById('emailInput').value;
+    if (emailInput) {
+      window.location.href = 'welcome.htm';
+        } else {
+          alert('Please enter an email address');
+            }
+              }
+//about founder code
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.custom-primary-button').addEventListener('click', function() {
+    const emailInput = document.getElementById('emailInput');
+      const emailValue = emailInput.value;
+         if (emailValue) {
+          alert(`Email submitted: ${emailValue}`);
+// Open portfolio.html in the same tab
+         window.location.href = 'portfolio.html';
+           } else {
+               alert('Please enter a valid email address.');
+                 }
+                   });
+                      });
+                         </script>
