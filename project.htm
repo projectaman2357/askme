@@ -819,77 +819,63 @@ nav ul ul ul li{
           <a href="">Projects</a>
           <ul>
               <li><a href="solar.html">Solar system</a></li>
-              <li><a href="portfolio.htm">portfolio</a></li>
-              <li><a href="">To do list</a></li>
+              <li><a href="portfolio.html">portfolio</a></li>
               <li>
-                  <a href="">more
+                  <a href="#">more
                       <span class="fa fa-plus"></span>
                   </a>
                   <ul>
-                      <li><a href="">Lamp</a></li>
                       <li><a href="login.htm">Login page</a></li>
-                      <li><a href="BIRTHDAY.HTM">birthday gift</a></li>
-                      <li><a href="share.htm">share buttom</a></li>
-                      
-                    
                   </ul>
               </li>
           </ul>
       </li>
-
-
-
       <li>
         <a href="idea.htm">Services</a>
         <ul>
-            <li><a href="">source code</a></li>
-            <li><a href="">solution </a></li>
+            <li><a href="https://github.com/projectaman2357">source code</a></li>
+            <li><a href="https://www.instagram.com/project.aman2357/">solution </a></li>
             <li>
-                <a href="">more
+                <a href="#">more
                     <span class="fa fa-plus"></span>
                 </a>
                 <ul>
-                    <li><a href="">direct solution</a></li>
-                    <li><a href="">contact</a></li>
-                    <li><a href="">Portfolio lINK</a></li>
+                    <li><a href="#">Direct solution</a></li>
+                    <li><a href="portfolio.html">contact</a></li>
                 </ul>
             </li>
         </ul>
     </li>
-
-
-
     <li>
-      <a href="">Help</a>
+      <a href="#">Help</a>
       <ul>
-          <li><a href="">web design</a></li>
-          <li><a href="">app design</a></li>
+          <li><a href="https://github.com/projectaman2357">web design</a></li>
+          <li><a href="#">App design</a></li>
           <li>
               <a href="">more
                   <span class="fa fa-plus"></span>
               </a>
               <ul>
-                  <li><a href="">process </a></li>
-                  <li><a href="">project planing</a></li>
-                  <li><a href="">hosting</a></li>
+                  <li><a href="https://www.instagram.com/project.aman2357/">process </a></li>
+                  <li><a href="https://www.instagram.com/project.aman2357/">project planing</a></li>
+                  <li><a href="https://github.com/projectaman2357">hosting</a></li>
               </ul>
           </li>
       </ul>
-  </li>
-        
+  </li> 
   <li>
-    <a href="">suggestion</a>
+    <a href="https://www.instagram.com/project.aman2357/">suggestion</a>
     <ul>
-        <li><a href="">cod error</a></li>
-        <li><a href="">templates</a></li>
+        <li><a href="https://github.com/projectaman2357">cod error</a></li>
+        <li><a href="https://github.com/projectaman2357">Templates</a></li>
         <li>
             <a href="">more
                 <span class="fa fa-plus"></span>
             </a>
             <ul>
-                <li><a href="">github</a></li>
-                <li><a href="">insta</a></li>
-                <li><a href="">facebook</a></li>
+                <li><a href="https://github.com/projectaman2357">github</a></li>
+                <li><a href="https://www.instagram.com/project.aman2357/">insta</a></li>
+                <li><a href="https://www.facebook.com/trikaleducation/about">facebook</a></li>
             </ul>
         </li>
     </ul>
@@ -916,27 +902,20 @@ nav ul ul ul li{
         </h2>
       </div>
 
-      
-      
-
       <div class="home-computer-container">
         <img class="home-computer" src="image/new aman child.png" alt="a computer in dark with shadow" class="home-img">
       </div>
     </section>
 
     <!-- OFFER SECTION -->
-
     <section class="container section-2">
       <!-- offer 1 -->
-
-      
-
     <!-- PRODUCT SECTION -->
     <section class="container section-3">
       <!-- product - 1 -->
       <div class="product product-1">
         <img src="image/ASK.png" alt="computer to sell" class="product-img">
-        <strong>sjs</strong><br>
+        <strong></strong><br>
         <a href="quize.htm" class="btn-true">DOWNLOAD</a>
       </div>
       <!-- product - 2 -->
@@ -1050,6 +1029,27 @@ bxX.addEventListener('click', (e)=> {
         bxX.classList.remove('show-bx');
     }
 })
+
+//bellow javascript code for after entering email then open index.html
+
+document.addEventListener('DOMContentLoaded', function() {
+    const subscribeButton = document.querySelector('.subscribe-container input[type="submit"]');
+    const emailInput = document.getElementById('email-subscribe');
+
+    subscribeButton.addEventListener('click', function() {
+        const email = emailInput.value;
+
+        if (email) {
+            // You can add any email validation here if needed
+
+            // Redirect to index.html
+            window.location.href = 'index.html';
+        } else {
+            alert('Please enter an email address.');
+        }
+    });
+});
+
 
 
   </script>
